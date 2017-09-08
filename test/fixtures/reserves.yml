@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  house: MyString
+  user: MyString
+  check_in: 2017-09-08
+  check_out: 2017-09-08
+  omiyage: MyText
+
+two:
+  house: MyString
+  user: MyString
+  check_in: 2017-09-08
+  check_out: 2017-09-08
+  omiyage: MyText
