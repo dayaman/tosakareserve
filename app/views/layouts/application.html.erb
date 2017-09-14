@@ -11,6 +11,14 @@
   <body>
     <%= yield %>
     <hr>
-    <%= link_to 'SIGN_OUT', destroy_user_session_path, method: :delete %>
+    <form class="form-inline">
+      <footer>
+        <div align="left"><a href="">このページについて</a></div>
+
+        <div align="right"><a href="">ヘルプ</a></div>
+
+        <%= link_to 'SIGN_OUT', destroy_user_session_path, method: :delete %>
+      </footer>
+    </form>
   </body>
 </html>
