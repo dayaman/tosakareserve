@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+  get 'abouts/index'
+
+  get 'abouts/create'
+
+  get 'abouts/new'
+
+  get 'abouts/show'
+
+  get 'abouts/update'
+
+  get 'abouts/destroy'
+
+  get 'abouts/edit'
+
   resources :welcomes
 
   get 'create.html.erb', to:'welcomes#create'
