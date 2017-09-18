@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'abouts/help'
+
+  get 'abouts/test'
+
   resources :welcomes
 
   get 'create.html.erb', to:'welcomes#create'
