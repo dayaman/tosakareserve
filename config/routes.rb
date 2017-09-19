@@ -1,7 +1,13 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
+  get 'abouts/help'
+
+  get 'abouts/test'
+=======
   get 'owners/mypage'
 
   get 'owners/confirmation'
+>>>>>>> b4ade6349e6afcb0b118e8abb7fa9a7e9ff83ffe
 
   resources :welcomes
 
