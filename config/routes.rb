@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'owners/mypage'
   get 'owners/confirmation'
   get 'owners/myhouse'
+  get 'owners/lost'
 
 #=======
   get 'create.html.erb', to:'welcomes#create'
