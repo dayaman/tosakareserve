@@ -1,0 +1,31 @@
+<center>
+  <body>
+    <h1>予約検索</h1>
+    <input type="text" value="宿名" size="30">
+    <p>期間を選んでください</p>
+    <ul>
+      <p>
+        <input type="date" min="2017-09-20" max="2017-10-20">
+      から
+      </p>
+      <p>~</p>
+      <p>
+        <input type="date" min="2017-09-20" max="2017-10-20">
+      まで
+      </p><br>
+    </ul>
+    <p><input type="submit" value="検索" ></p>
+
+    <table border="3" width="60%" height="120">
+      <tr>
+        <th>日付</th><th>予約数</th><th>予約者</th>
+      </tr>
+      <% 5.times do %>
+      <tr>
+        <td></td><td></td><td></td>
+      </tr>
+      <% end %>
+    </table>
+
+  </body>
+</center>
