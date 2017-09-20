@@ -9,7 +9,13 @@ Rails.application.routes.draw do
   get 'owners/confirmation'
 >>>>>>> b4ade6349e6afcb0b118e8abb7fa9a7e9ff83ffe
 
-  resources :welcomes
+  get 'welcomes/create'
+  get 'welcomes/edit'
+  get 'welcomes/index'
+  get 'welcomes/destroy'
+  get 'welcomes/new'
+  get 'welcomes/show'
+  get 'welcomes/update'
 
 #<<<<<<< HEAD
   get 'owners/mypage'
