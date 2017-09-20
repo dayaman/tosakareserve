@@ -1,5 +1,6 @@
 class WelcomesController < ApplicationController
   before_action :authenticate_user!, only: :index
+  layout "menu.html.erb"
 
   def index
   end
