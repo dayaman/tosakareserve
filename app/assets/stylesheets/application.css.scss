@@ -16,3 +16,10 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.navbar-brand {
+    background: url("title.png") no-repeat left center;
+    background-size: contain;
+    height: 50px;
+    width: 250px;
+}
