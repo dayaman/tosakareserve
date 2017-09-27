@@ -2,24 +2,18 @@
   <h1>My宿</h1>
 </center>
 
-<form method = "post" action = "">
-  <ul>
-    <li>宿名：
-      <input type = "text" name = "housename" size = "30">
-    </li>
-    <li>アイコン：</li>
-    <li>宿泊人数：
-      <select name = "myhouse">
-        <% a = 1..5 %>
-        <% a.each do |i| %>
-        <option value = "sample1"><%= i %></option>
-        <% end %>
-     </select>
-    </li>
-    <li>お知らせ：<br>
-      <textarea name = "information" rows = "4" cols = "40"></textarea>
-    </li>
-    <br><input type = "button" value = "登録">
-  </ul>
-</form>
+<%= form_for @owner do |f| %>
+  <%= f.label :name, "宿名 : " %>
+  <%= f.text_field :name %>
+  <br>
+  <%= f.label :capacity, "宿泊人数 : " %>
+  <%= select_tag :capacity, options_for_select([1, 2, 3, 4, 5]) %>
+  <br>
+  <%= f.label :news, "お知らせ : " %>
+  <br>
+  <%= f.text_area :news %>
+  <br>
+  <%= f.submit "登録" %>
+<% end %>
+
 <%= link_to '戻る', owners_path %>
