@@ -1,9 +1,10 @@
 <center>
-  <h1>予約確認</h1>
+  <h1><%= current_user.name %></h1>
 </center>
-
+<center>
 <form method = "post" action = "">
   <table border = "２">
+    <h3>予約リスト</h3>
     <tr>
       <td>宿名</td>
       <td>オーナー</td>
@@ -11,14 +12,15 @@
       <td>おみやげ</td>
       <td></td>
     </tr>
-    <% 4.times do %>
+    <% 6.times do %>
       <tr>
         <td>hoge</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>hage</td>
+        <td>bala</td>
+        <td>tutu</td>
+        <td>tin</td>
       </tr>
     <% end %>
   </table>
 </form>
+</center>

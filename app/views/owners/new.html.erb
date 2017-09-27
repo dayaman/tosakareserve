@@ -1,0 +1,25 @@
+<center>
+  <h1>My宿</h1>
+</center>
+
+<form method = "post" action = "">
+  <ul>
+    <li>宿名：
+      <input type = "text" name = "housename" size = "30">
+    </li>
+    <li>アイコン：</li>
+    <li>宿泊人数：
+      <select name = "myhouse">
+        <% a = 1..5 %>
+        <% a.each do |i| %>
+        <option value = "sample1"><%= i %></option>
+        <% end %>
+     </select>
+    </li>
+    <li>お知らせ：<br>
+      <textarea name = "information" rows = "4" cols = "40"></textarea>
+    </li>
+    <br><input type = "button" value = "登録">
+  </ul>
+</form>
+<%= link_to '戻る', owners_path %>
