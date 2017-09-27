@@ -1,14 +1,16 @@
-
 <h1><center>宿リスト</center></h1>
 
 <center>
-  <table border="3">
-      
+  <table border="2">
     <tr>
-      <td>宿名</td>
-      <td>オーナー<br>キャッピコピー</br></td>
+      <th>宿名</th><th>オーナー</th>
     </tr>
-
+    <% @owner.each do |owner| %>
+      <tr>
+        <td><%= owner.name %></td>
+        <td><%= owner.owner %></td>
+      </tr>
+    <% end %>
   </table>
 </center>
-  
+
