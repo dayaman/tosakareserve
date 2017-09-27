@@ -3,6 +3,7 @@ class WelcomesController < ApplicationController
   layout "menu.html.erb"
 
   def index
+    @owner = Owner.all
   end
 
   def create
