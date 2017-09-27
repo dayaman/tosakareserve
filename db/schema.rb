@@ -28,11 +28,32 @@ ActiveRecord::Schema.define(version: 20170927064807) do
     t.index ["name"], name: "index_admin_users_on_name", unique: true
   end
 
+  create_table "houses", force: :cascade do |t|
+    t.string "name"
+    t.integer "capacity"
+    t.text "news"
+    t.string "owner"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.text "amazon"
+    t.string "img"
+  end
+
   create_table "owners", force: :cascade do |t|
     t.string "name"
     t.integer "capacity"
     t.text "news"
     t.string "owner"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "reserves", force: :cascade do |t|
+    t.string "house"
+    t.string "user"
+    t.date "check_in"
+    t.date "check_out"
+    t.text "omiyage"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

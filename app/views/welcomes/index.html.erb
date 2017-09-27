@@ -1,10 +1,16 @@
 <h1><center>宿リスト</center></h1>
 
 <center>
-  <% @owner.each do |owner| %>
-    <h3>
-      <%= owner.name %><%= owner.owner %>
-    </h3>
-  <% end %>
+  <table border="2">
+    <tr>
+      <th>宿名</th><th>オーナー</th>
+    </tr>
+    <% @owner.each do |owner| %>
+      <tr>
+        <td><%= owner.name %></td>
+        <td><%= owner.owner %></td>
+      </tr>
+    <% end %>
+  </table>
 </center>
 
