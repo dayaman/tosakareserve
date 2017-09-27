@@ -1,12 +1,14 @@
 Rails.application.routes.draw do
   devise_for :admin_users
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+
   get 'abouts/help'
 
   get 'abouts/test'
   get 'owners/mypage'
 
   get 'owners/confirmation'
+  resources 'owners'
 
   get 'welcomes/create'
   get 'welcomes/edit'
