@@ -3,7 +3,7 @@
 <center>
   <% @owner.each do |owner| %>
     <h3>
-      <%= link_to "#{owner.name} #{owner.owner}" %>
+      <%= link_to "#{owner.name} #{owner.owner}", owner_path(owner) %>
     </h3>
   <% end %>
 </center>
