@@ -10,11 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20170908152929) do
-=======
-ActiveRecord::Schema.define(version: 20170912080416) do
->>>>>>> 01c3cdd01f373754fc23cce2469e52cc68f52244
+ActiveRecord::Schema.define(version: 20170927064807) do
+
+  create_table "admin_users", force: :cascade do |t|
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.datetime "remember_created_at"
+    t.integer "sign_in_count", default: 0, null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string "current_sign_in_ip"
+    t.string "last_sign_in_ip"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "name"
+    t.index ["email"], name: "index_admin_users_on_email", unique: true
+    t.index ["name"], name: "index_admin_users_on_name", unique: true
+  end
 
   create_table "houses", force: :cascade do |t|
     t.string "name"
@@ -23,11 +35,17 @@ ActiveRecord::Schema.define(version: 20170912080416) do
     t.string "owner"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-<<<<<<< HEAD
-=======
     t.text "amazon"
     t.string "img"
->>>>>>> 01c3cdd01f373754fc23cce2469e52cc68f52244
+  end
+
+  create_table "owners", force: :cascade do |t|
+    t.string "name"
+    t.integer "capacity"
+    t.text "news"
+    t.string "owner"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "reserves", force: :cascade do |t|

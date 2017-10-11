@@ -1,26 +1,26 @@
 <center>
-<h1>予約確認</h1>
+  <h1><%= current_user.name %></h1>
 </center>
-
+<center>
 <form method = "post" action = "">
-
-<table border = "２">
-<tr>
-<td>宿名</td>
-<td>オーナー</td>
-<td>期間</td>
-<td>おみやげ</td>
-<td></td>
-</tr>
-<tr>
-<% 4.times do %>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><input type = "submit" value = "キャンセル"></td>
-</tr>
-<% end %>
-</table>
-
+  <table border = "２">
+    <h3>予約リスト</h3>
+    <tr>
+      <td>宿名</td>
+      <td>オーナー</td>
+      <td>期間</td>
+      <td>おみやげ</td>
+      <td></td>
+    </tr>
+    <% 6.times do %>
+      <tr>
+        <td>hoge</td>
+        <td>hage</td>
+        <td>bala</td>
+        <td>tutu</td>
+        <td>tin</td>
+      </tr>
+    <% end %>
+  </table>
 </form>
+</center>

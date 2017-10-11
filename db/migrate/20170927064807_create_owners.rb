@@ -1,6 +1,6 @@
-class CreateHouses < ActiveRecord::Migration[5.1]
+class CreateOwners < ActiveRecord::Migration[5.1]
   def change
-    create_table :houses do |t|
+    create_table :owners do |t|
       t.string :name
       t.integer :capacity
       t.text :news

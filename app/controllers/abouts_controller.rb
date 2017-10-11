@@ -1,4 +1,6 @@
 class AboutsController < ApplicationController
+  layout 'menu.html.erb'
+
   def help
   end
 
